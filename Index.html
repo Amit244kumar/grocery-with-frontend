@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROCA</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="indexMain.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/64edd0846d.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <section id="add-to-cart">
+        <i class="fa-solid fa-xmark" onclick="addToCartClose()"></i>
+        <div id="cart-content">
+            <h1>Your Card Is Empty</h1>
+            <div id="btn">
+                <a href="#" style="color: white; font-weight: 100;">Continue shopping</a>
+            </div>
+            <p class="yt">Have an account</p>
+            <p class="yt"><a href="./login.html" style="text-decoration: underline; padding-right: 7px;">login in</a>to check out faster</p>
+        </div>
+    </section>
+
+    <div id="scrolling-header"> 
+    <header id="first-header-info" class="header">
+        <div id="information" >
+                 <a href="mail"><i class="fa-solid fa-envelope"></i>info@example.com</a>
+                 <a href="tel"><i class="fa-solid fa-phone"></i>0000-344224</a>
+        </div>
+        <div id="navigation">
+        <nav id="social-media">
+                    <ol id="navigation-bar">
+                        <li id="twiter">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li id="facebook">
+                            <a href="#">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </li>
+                        <li id="pin">
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li id="instagram">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ol>
+        </nav>
+    </header>
+
+    <header id="second-header-info" class="header">
+         <a href="#" class="second-header-content" id="logo">
+            <img src="img./logo.webp" alt="" srcset="">
+         </a>
+         <nav class="second-header-content">
+            <ol>
+                <a href="Index.html">
+                    <li style="color:rgb(137 199 74)">Home</li>
+                </a>
+                <a href="shop.html">
+                    <li>shop</li>
+                </a>
+                <!-- <a href="">
+                    <li><i class="fa-solid fa-angle-down"></i>Best sellers</li>
+                </a> -->
+                <a href="">
+                    <li>Deal of The Day</li>
+                </a>
+                <a href="about.html">
+                    <li>Pages</li>
+                </a>
+                <a href="">
+                    <li>contant us</li>
+                </a>
+            </ol>
+         </nav>
+        <nav class="second-header-content" >
+            <ul>
+                <a href="login.html"><li><i class="fa-solid fa-user-tie"></i></i></li></a>
+                <a href="#" ><li onclick="addToCartOpen()"><i class="fa-sharp fa-solid fa-cart-shopping"></i></li></a>
+                <a href="wishlist.html"><li><i class="fa-solid fa-heart"></i></li></a>
+            </ul>
+        </nav>
+        <br>
+
+
+    </header>
+    <section id="searching-product" >
+        <div id="all-categories-product" onclick="toggle()">
+            <span>All categories</span>
+            <i class="fa-solid fa-angle-down"></i>
+            <ul id="dropdown">
+                <li>
+                    <a href="#">Fruits</a>
+                </li>
+                <li>
+                    <a href="#">Vegetables</a>
+                </li>
+                <li>
+                    <a href="#">Flour</a>
+                </li>
+                <li>
+                    <a href="#">Cookies</a>
+                </li>
+                <li>
+                    <a href="#">Meat</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="search-for-product" >
+            <input type="search" placeholder="search">
+        </div>
+        <div id="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </section>
+</div>
+
+    <main id="image-section-area" >
+        <!-- <div id="second-image" class="sliding-img">
+            <div id="image">
+                <img src="img./slider-2 .webp" alt="" >
+            </div>
+            <div id="image1-content">
+                <h2 class="banner_sub_heading"> Natural Health Care Ingredients</h2>
+                <h2 class="banner_sub_heading h1">Grocery Shoping</h2>
+                <div id="banner_text">
+                    <span>Save upto 30% off</span>
+                </div>
+                <div id="banner_button">
+                    <a href="#" style="color: white;">Shop Now</a>
+                </div>
+            </div>
+        </div> -->
+        <div id="first-image" class="sliding-img" style="height: 628px;position: relative;
+        top: 192px;">
+            <div id="image">
+                <img src="img./slider-1.webp" alt="" >
+            </div>
+            <div id="image-content">
+                <div class="heading-icon-iamge" >
+                    <img src="img/leaf.webp" width="80" height="80" loading="lazy">
+                </div>
+                <h2 id="cxsgg">100% Healthy & affordable</h2>
+                <h2 id="ffgss">Organic Vegetables</h2>
+                <span id="jfhgb">Small Change Big Difference</span>
+                <div id="button">
+                    <a href="#" style="color: white;">Shop Now</a>
+                </div>  
+            </div>
+        </div>
+        <!-- <div id="third-image" class="sliding-img">
+            <div id="image">
+                <img src="img./slider-3.webp" alt="" >
+            </div>
+            <div id="image2-content" >
+                    <span id="banner_head">GROCA</span>
+                    <h1 id="banner_sub_head">Vegetable 100% <span style="    margin-left: 100px;
+                        font-family: cursive;">Organic</span> </h1>
+                    <center>
+                        <span id="banner_low_font_text">Natural Health Care Ingredients</span>
+                    <h1 id="off">50% OFF</h1>
+                    <div id="btn">
+                        <a href="#">Shop Now</a>
+                    </div>
+                    </center>
+            </div>
+        </div> -->
+    </main>
+    <!-- <div id="left-arrow" class="arrow">
+        <i class="fa-solid fa-arrow-left" style="margin-left: 13px; color: white;"></i>
+    </div>
+    <div id="right-arrow" class="arrow">
+        <i class="fa-solid fa-arrow-right" style="margin-left: 13px; color: white;"></i>    
+    </div> -->
+    <section id="sub-images">
+          <div id="first-img" class="left-side-image-content">
+            <img src="img./img-1.webp" alt="">
+            <div class="content" style="background-color: pink;">
+                <div class="text">
+                    <h2>Veggies</h2>
+                    <span><strong>100%</strong> Organic <br>Products</span>
+                    <div class="btn">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div id="second-img" class="left-side-image-content">
+            <img src="img./img-2.webp" alt="">
+            <div class="content" style="background-color:#ffff438a;">
+                <div class="text">
+                    <h2>Fruits</h2>
+                    <span ><strong >100%</strong> Fresh <br>Products</span>
+                    <div class="btn">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+          </div>   
+    </section> 
+    <section id="grocery-categories" style="position: relative;   top: 252px;">
+        <div id="heading" class="category">
+            <h2>our Products</h2>
+            <span>Mauris vitae ultricies leo integer malesuada nunc vel in arcu cursus</span>
+        </div>
+        <div class="category" id="product-icons">
+            <div id="fruit" class="icons" onclick="Fruit()">
+                <img src="img/fruit-2.webp" alt="">
+                <span>Fruit</span>
+            </div>
+            <div id="flour"  class="icons" onclick="Flour()">
+                <img src="img/flour-3.webp" alt="">
+                <span>Flour</span>
+            </div>
+            <div id="meat" class="icons" onclick="meat()">
+                <img src="img/meat-4.webp" alt="">
+                <span>Meat</span>
+            </div>
+            <div id="vege" class="icons" onclick="vege()">
+                <img src="img/vegetables-5.webp" alt="">
+                <span>Vege</span>
+            </div>
+        </div>
+        <div class="category" id="product-list">
+            <div class="product-img">
+                <img src="img./watermelon-1.webp" alt="" class="img">
+                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <div class="product-details">
+                    <span class="name">watermelon</span>
+                    <h3 style="color:rgb(137 199 74)" class="product-price">$6.67 <strike class="strike-price">$99.00</strike></h3>
+                    <div>
+                        <a href="#" style="color:white;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="img./tomato-2.webp" alt="" class="img">
+                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <div class="product-details">
+                    <span class="name">Tomato</span>
+                    <h3 style="color:rgb(137 199 74)" class="product-price">$0.47 <strike class="strike-price">$2.34</strike></h3>
+                    <div>
+                        <a href="#" style="color:white;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="img./coriander-3.webp" alt="" class="img">
+                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <div class="product-details">
+                    <span class="name">coriander</span>
+                    <h3 style="color:rgb(137 199 74)" class="product-price">$1.34 <strike class="strike-price">$3.2</strike></h3>
+                    <div>
+                        <a href="#" style="color:white;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="img./chicken-5.webp" alt="" class="img">
+                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <div class="product-details">
+                    <span class="name">chicken Breast</span>
+                    <h3 style="color:rgb(137 199 74)" class="product-price">$13.3 <strike class="strike-price">$20.44</strike></h3>
+                    <div>
+                        <a href="#" style="color:white;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="img./badam-6.webp" alt="" class="img">
+                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <div class="product-details">
+                    <span class="name">Badam</span>
+                    <h3 style="color:rgb(137 199 74)" class="product-price">$16.3 <strike class="strike-price">$40.4</strike></h3>
+                    <div>
+                        <a href="#" style="color:white;">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="img./egg-4.webp" alt="" class="img">
+                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <div class="product-details">
+                    <span  class="name">Egg</span>
+                    <h3 style="color:rgb(137 199 74)" class="product-price">$4.23 <strike class="strike-price">$10.44</strike></h3>
+                    <div>
+                        <a href="#" style="color: white;"> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="background-image" style="height: 663px;    position: relative; top: 193px;">
+            <div id="bg-content">
+               <h1>Special Discount For All Grocery <span >Products</span></h1>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum iusto repellendus ea molestiae reiciendis voluptatem minus modi adipisci quas atque doloribus sequi veritatis cum animi nisi velit ab maiores est vero, unde quisquam? Fugit laudantium aut ipsum impedit? A rem cupiditate expedita aliquam ut quaerat ratione quia, dolor nihil. Itaque.</p>
+               <div>
+                <h1 id="countDown" style="    color: black;
+                font-size: 35px; margin-bottom: -17;"> </h1>
+                <pre style="font-size:22px;font-weight: bolder;">day             hr           min          sec</pre>
+               </div>
+            </div>
+            <div id="bg" style="position: relative;
+            bottom: 303px;">
+                <img src="img./bg.png" alt="" srcset="">
+            </div>
+    </section>
+    <section id="subscribe-banner">
+       <img src="img./bucket-3.webp" alt="">
+       <div id="banner-content">
+            <h2 style="margin-left: 41px;font-size: 30px;">Subscribe To Our Emails</h2>
+            <input type="email" placeholder="Email address" id="sub">
+            <a href="#">
+                <span >Subcribe</span> 
+            </a>
+       </div>
+    </section>
+    <section >
+        <div id="swiper-slider">
+           <ul id="flex-item">
+            <li class="list-item" style="left:0px">
+                <a href="#"> <img src="img./vegetables.avif" alt=""></a>
+            </li>
+            <li class="list-item" style="left:300px">
+                <a href="#"><img src="img./family-farm.avif" alt=""></a>
+            </li>
+            <li class="list-item" style="left:600px">
+                <a href="#"><img src="img./farmer's-market.avif" alt=""></a>
+            </li>
+            <li class="list-item" style="left:900px"><a href="#"><img src="img./premium.avif" alt=""></a></li>
+            <li class="list-item" style="left:1100px">
+                <a href="#"><img src="img/fresh-vegetables.avif" alt=""></a>
+            </li>
+            <li class="list-item" style="left:1400px"><a href="#"><img src="img./vege.avif" alt="" srcset=""></a></li>
+           </ul>
+        </div>
+    </section>
+    <footer id="footer">
+         <div id="address-list">
+             <ul id="ad">
+                <li class="li">
+                    <img src="img./logo.webp" alt="" srcset="">
+                </li>
+                <li class="li">
+                    <i class="fa-solid fa-location-dot"></i> No: 58 A, East Madison Street, Baltimore, MD, USA 4508
+                </li>
+                <li  class="li"><i class="fa-solid fa-phone" ></i>423-845-6570</li>
+                <li id="email"><a href="email" style="color: white; position: relative;right:10px"><i class="fa-solid fa-envelope"></i>random@email.com</a></li>
+                <li class="li">
+                    <ol id="navigation-bar" style="left: -63px;">
+                        <li id="twiter">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li id="facebook">
+                            <a href="#">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </li>
+                        <li id="pin">
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li id="instagram">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+             </ul>
+         </div>
+          <div id="footer-list-item">
+            <ol class="list-items">
+                <span class="list-heading">Help</span>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>search</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Help</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Information</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Privacy Policy</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Shipping Information</a>
+                </li class="item">
+            </ol>
+            <ol class="list-items">
+                <span class="list-heading">support</span>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Contact</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>About Us</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Carrers</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Refund & Returns</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Deliveries</a>
+                </li>
+            </ol>
+            <ol class="list-items">
+                <span class="list-heading">Information</span>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Search Terms</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right"></i>Advanced search</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Helps &Fags</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Store Location</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="a"><i class="fa-solid fa-chevron-right ar"></i>Order & Returns</a>
+                </li>
+            </ol>
+          </div>
+    </footer>
+    
+
+
+
+</body>
+</html>
