@@ -1,0 +1,15 @@
+{
+    "version":2,
+    "builder":[
+        {
+            "src":"./index.html",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"*/(.*)",
+            "dest":"/"
+        }
+    ]
+}
